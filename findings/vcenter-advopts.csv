@@ -1,0 +1,5 @@
+Finding,Category,Remediation,Duplicate,Key,Value
+VCWN-06-000021,II,Automated,$falseconfig.nfc.useSSL,true
+VCWN-06-000023,II,Automated,$falseVirtualCenter.VimPasswordExpirationInDays,30
+VCWN-06-000024,II,Automated,$falseconfig.vpxd.hostPasswordLength,32
+VCWN-06-000036,III,Automated,$false,config.log.level,info

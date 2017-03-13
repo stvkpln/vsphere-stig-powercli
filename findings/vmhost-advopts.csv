@@ -1,0 +1,21 @@
+Finding,Category,Remediation,Duplicate,Key,Value
+ESXI-06-000034,II,Automated,$false,Config.HostAgent.plugins.solo.enableMob,FALSE
+ESXI-06-000005,II,Automated,$false,Security.AccountLockFailures,3
+ESXI-06-000006,II,Automated,$false,Security.AccountUnlockTime,900
+ESXI-06-000031,II,Automated,$false,Security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-100031,II,Automated,$true,security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-200031,II,Automated,$true,security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-300031,II,Automated,$true,security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-400031,II,Automated,$true,security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-500031,II,Automated,$false,Security.PasswordQualityControl,"similar=deny retry=3 min=disabled,disabled,disabled,disabled,15"
+ESXI-06-000043,II,Automated,$false,UserVars.DcuiTimeOut,600
+ESXI-06-100043,II,Automated,$true,UserVars.DcuiTimeOut,600
+ESXI-06-000041,II,Automated,$false,UserVars.ESXiShellInteractiveTimeOut,600
+ESXI-06-100041,II,Automated,$true,UserVars.ESXiShellInteractiveTimeOut,600
+ESXI-06-000042,II,Automated,$false,UserVars.ESXiShellTimeOut,600
+ESXI-06-100042,II,Automated,$true,UserVars.ESXiShellTimeOut,600
+ESXI-06-000002,III,Automated$false,,DCUI.Access,root
+ESXI-06-000030,III,Automated$false,,Config.HostAgent.log.level,info
+ESXI-06-000055,III,Automated$false,,Mem.ShareForceSalting,2
+ESXI-06-000058,III,Automated$false,,Net.BlockGuestBPDU,1
+ESXI-06-100030,III,Automated$false,,Config.HostAgent.log.level,info
