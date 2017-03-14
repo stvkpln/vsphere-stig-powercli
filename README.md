@@ -1,7 +1,6 @@
 # vSphere 6.0 STIG Check and Remediation Module
   * Version: 1.0
   * Last Update: 2016-DEC-27
-  * Updated by: Steve Kaplan (steve@intolerable.net)
 
 ## Get-vCenterStigValues
 The following checks must be conducted manually (with rationale for why they are not included in this module):
@@ -49,7 +48,7 @@ The following checks must be conducted manually (with rationale for why they are
   *  Category II: ESXI-06-000065, ESXI-06-000066, ESXI-06-000068, ESXI-06-000070
   * Category III: ESXI-06-000067
   
-  ## Set-VMHostStigValues
+## Set-VMHostStigValues
 All noted manual checks from the 'Get-VMHostStigValues' function are out of scope for automated remediation due to a lack of a mechanism to check, let alone remediate the findings. In addition, the following findings are not currently in scope for automated remediation in this version of the module:
 
 1. The following findings relate to configuring of that generally are very environment (and sometimes even cluster) specific. These findings should ideally be remediated utilizing a host profile to ensure proper policy enforcement of these values are stored and available for a more streamlined remediation via vCenter. Impacted findings:
