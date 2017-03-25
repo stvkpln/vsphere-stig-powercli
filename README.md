@@ -39,7 +39,7 @@ The following checks must be conducted manually (with rationale for why they are
   * Category III: ESXI-06-000014, ESXI-06-000018, ESXI-06-000019, ESXI-06-000022, ESXI-06-000026, ESXI-06-000027
   
  
-2. Network validation tasks that require review: Because environemnts vary and requirements are different (and because hosts running ESXi 5.x may be checked where this isn't applicable)
+2. Network validation tasks that require review: Because environments vary and requirements are different (and because hosts running ESXi 5.x may be checked where this isn't applicable)
   *  Category II: ESXI-06-000048, ESXI-06-000049, ESXI-06-000050
   * Category III: ESXI-06-000051, ESXI-06-000052
 
@@ -63,8 +63,8 @@ All noted manual checks from the 'Get-VMHostStigValues' function are out of scop
   * Kernel Core Dumps: ESXI-06-000044
   * DoD Banner (Annotations.WelcomeMessageCheck): ESXI-06-000007, ESXI-06-100007
   * DoD Banner (Config.Etc.issue): ESXI-06-000008
-  * SNMP Confiugration: ESXI-06-000053
-  * Lockdwon Exception Users: ESXI-06-000003
+  * SNMP Configuration: ESXI-06-000053
+  * Lockdown Exception Users: ESXI-06-000003
   * Unrestricted access to host services: ESXI-06-000056
   * Native VLAN for Standard Portgroup: ESXI-06-000063
   * Virtual Guest Tagging for Standard Portgroup: ESXI-06-000064
@@ -72,7 +72,7 @@ All noted manual checks from the 'Get-VMHostStigValues' function are out of scop
 
 2. ESXI-06-000072: This finding relates to a host's patch compliance status. Because applying patches generally requires a host to be placed into maintenance, and may require an extended window to remediate all applicable hosts, this is not done as an automated action.
 
-3. ESXI-06-000054: This is a check for whether bidirectional CHAP authentication is being used for iSCSI. Becuase remediation would require a connectivity outage with the impacted storage array(s) to correct, remediation must be done manually
+3. ESXI-06-000054: This is a check for whether bidirectional CHAP authentication is being used for iSCSI. Because remediation would require a connectivity outage with the impacted storage array(s) to correct, remediation must be done manually
 
 ## Get-VMStigValues
 The following checks must be conducted manually:
@@ -85,6 +85,6 @@ The following checks must be conducted manually:
 ## Set-VMStigValues
 All noted manual checks from the 'Get-VMStigValues' function are out of scope for automated remediation due to a lack of a mechanism to check, let alone remediate the findings. In addition, the following findings are not currently in scope for automated remediation in this version of the module:
 
-1. Category I: VMCH-06-000007 covers the use of independent non-persistent disks. Because this may be expected behavior for a virtual machine, and correcting the configure requires a power off operation to remediate, this finding will require manual remediation.
+1. Category I: VMCH-06-000007 covers the use of independent non-persistent disks. Because this may be expected behavior for a virtual machine, and correcting the configuration requires a power off operation to remediate, this finding will require manual remediation.
 
 2. Category II: The following findings relate to the use of unauthorized devices, each specific to a distinct type of device. Because removal of these devices generally requires a virtual machine to be powered off, and these devices may be required for some purpose, remediation for the following should be conducted manually on a per-system basis: VMCH-06-000028 (floppy drives), VMCH-06-000030 (parallel devices), VMCH-06-000031 (serial devices), VMCH-06-000032 (USB devices)
